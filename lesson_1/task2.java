@@ -10,8 +10,9 @@ public class task2 {
 
             while (scan.hasNextLine()) {
                 var s = scan.nextLine();
-                // System.out.println(i + " : " + scan.nextLine());
+                String[] arr = s.split(" ");
                 System.out.println(s.charAt(2));
+                System.out.println(arr[1]);
                 i++;
             }
 
