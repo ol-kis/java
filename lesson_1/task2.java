@@ -11,12 +11,13 @@ public class task2 {
             while (scan.hasNextLine()) {
                 var s = scan.nextLine();
                 String[] arr = s.split(" ");
-                System.out.println(s.charAt(2));
-                System.out.println(arr[1]);
+                int[] myArray = new int[2];
+                myArray[i-1]=Integer.parseInt(arr[1]);
                 i++;
             }
-
             reader.close();
+            var result = Math.pow(myArray[0],myArray[1]);
+            System.out.println(result);
 
         } catch (IOException ex) {
 
