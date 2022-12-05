@@ -2,7 +2,7 @@ import java.util.Arrays;
 public class Main
 {
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		System.out.println("Enter number separated by commas");
 		String a=System.console().readLine();
 		String [] arr = a.split(",");
 		int[] array = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
