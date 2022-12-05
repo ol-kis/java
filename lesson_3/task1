@@ -1,0 +1,23 @@
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		String a=System.console().readLine();
+		String [] arr = a.split(",");
+		int[] array = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
+		int[] result_array= new int [array[1]+1];
+		result_array[2]=array[0];
+		for (int i = array[0]+array[3]; i < array[1]+1; i++) {
+		    result_array[i]+=result_array[i-array[3]]+result_array[i/array[2]]*((i % array[2]==0)?1:0);
+		}
+		if (result_array[array[1]]>0){    
+		    System.out.println(result_array[array[1]]);
+		}
+		else{
+		    System.out.println("The conversion cannot be implemented");
+		}
+		    
+	    
+    }
+}
