@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.print("Enter the ordinal number of a triangular number:");
+		int n=Integer.parseInt(System.console().readLine());
+		int triangular_of_n=(n*(n+1))/2;
+		System.out.println("A triangular number with an ordinal number "+n+" is "+triangular_of_n);
+		
+		
+	}
+}
